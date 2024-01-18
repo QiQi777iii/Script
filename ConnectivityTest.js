@@ -8,7 +8,7 @@ Github:'https://www.github.com'
 
 !(async () => {
   let results = await Promise.allSettled([http('Bilibili'), http('Github'), http('Google')])
-    .then(results => results.map(result => result.value));
+    。then(results => results.map(result => result.value));
 
   $done({
     title: 'Network Connectivity Test',
