@@ -6,14 +6,14 @@ Github:'https://www.github.com',
 OpenAI:'https://openai.com/',
 Youtube:'https://www.youtube.com/',
 Bilibili:'https://www.bilibili.com',
-Mega:'https://mega.io/',
+Mega  :'https://mega.io/',
 PikPak:'https://mypikpak.com/',
 Ehentai:'https://e-hentai.org/'
 }
 
 !(async () => {
   let results = await Promise.allSettled([http('Google'), http('Github'), http('OpenAI'), http('Youtube'), http('Bilibili'),http('Mega'),http('PikPak'),http('Ehentai')])
-    .then(results => results.map(result => result.value));
+    。then(results => results.map(result => result.value));
 
   $done({
     title: 'Network Connectivity Test',
