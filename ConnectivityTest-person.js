@@ -6,7 +6,7 @@ Github:'https://www.github.com',
 OpenAI:'https://openai.com/',
 Youtube:'https://www.youtube.com/',
 Bilibili:'https://www.bilibili.com',
-Mega  :'https://mega.io/',
+Mega:'https://mega.io/',
 PikPak:'https://mypikpak.com/',
 Ehentai:'https://e-hentai.org/'
 }
@@ -28,7 +28,7 @@ function http(req) {
    let time = Date.now();
         $httpClient.post($[req], (err, resp, data) => {
             r(req +
-      '\xa0\xa0\xa0\t: ' +
+      ' : ' +
       (Date.now() - time)+' ms');
         });
     });
