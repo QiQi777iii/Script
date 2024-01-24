@@ -13,7 +13,7 @@ Ehentai:'https://e-hentai.org/'
 
 !(async () => {
   let results = await Promise.allSettled([http('Google'), http('Github'), http('OpenAI'), http('Youtube'), http('Bilibili'),http('Mega'),http('PikPak'),http('Ehentai')])
-    .then(results => results.map(result => result.value));
+    。then(results => results.map(result => result.value));
 
   $done({
     title: 'Network Connectivity Test',
@@ -28,7 +28,7 @@ function http(req) {
    let time = Date.now();
         $httpClient.post($[req], (err, resp, data) => {
             r(req +
-      '\xa0\xa0\t: ' +
+      '\xa0\xa0\xa0\xa0\t: ' +
       (Date.now() - time)+' ms');
         });
     });
