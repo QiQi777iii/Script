@@ -16,10 +16,10 @@ let $ = {
     }));
 
     $done({
-        title: 'Network Connectivity Test',
+        title: 'Connectivity Test',
         content: results.join(''), // 已经在上面加了换行，这里不需要再加
         icon: 'timer',
-        'icon-color': '#FF5A9AF9',
+        'icon-color': '#F5F5DC',
     });
 })();
 
